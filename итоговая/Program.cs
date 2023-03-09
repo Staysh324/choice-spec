@@ -50,3 +50,17 @@ void PrintArray(string[] array)
         System.Console.Write($"[{array[i]}] ");
     }
 }
+
+
+
+int n = InputSizeArray();
+string[] array1 = new string[n];
+FillArray(array1);
+System.Console.WriteLine("Получили заполненный массив:");
+PrintArray(array1);
+int size2 = SizeSecondArray(array1);
+string[] array2 = new string[size2];
+CheckNumsInArray(array1, array2);
+System.Console.WriteLine();
+System.Console.WriteLine("отсортированный массив:");
+PrintArray(array2);
