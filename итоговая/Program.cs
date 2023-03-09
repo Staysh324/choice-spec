@@ -28,3 +28,17 @@ int SizeSecondArray(string[] array)
     }
     return count;
 }
+
+
+void CheckNumsInArray(string[] array, string[] array2)
+{
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length > 0 && array[i].Length < 4)
+        {
+            array2[j] = array[i];
+            j++;
+        }
+    }
+}
